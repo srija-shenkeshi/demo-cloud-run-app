@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     @GetMapping("/")
-    public String getProjectName(){
-        return "Project Name: demo-cloud-run-app";
+    public String welcomeMsg(){
+        return "Hi this is Srija's App";
+    }
+
+    @GetMapping("/getApp")
+    public String getAppName(){
+        return "App Name: demo-cloud-run-app";
     }
 }
